@@ -10,8 +10,14 @@ import PrivateRoute from './components/PrivateRoute';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#4489ff',
+      main: '#448AFF',
     },
+    secondary: {
+      main: '#FFF',
+    },
+  },
+  typography: {
+    fontFamily: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
   },
 });
 

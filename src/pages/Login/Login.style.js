@@ -2,15 +2,22 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    minHeight: '35vh',
+    zIndex: 100,
+    minHeight: '320px',
     width: '100vw',
     backgroundColor: theme.palette.primary.main,
     position: 'fixed',
     top: 0,
     left: 0,
   },
+  divider: {
+    borderLeft: '2px solid #fff',
+    maxWidth: '2px',
+    height: '180px',
+    padding: '0 32px',
+  },
   paper: {
-    marginTop: '35vh',
+    marginTop: '320px',
     height: '65vh',
     display: 'flex',
     paddingTop: '8vh',

@@ -7,7 +7,11 @@ import Link from '@material-ui/core/Link';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
 import { Box } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import GridList from '@material-ui/core/GridList';
 import useStyles from './Login.style';
+import Logo from '../../assets/images/logo.svg';
 
 const Login = () => {
   const classes = useStyles();
@@ -21,7 +25,18 @@ const Login = () => {
 
   return (
     <>
-      <Box className={classes.header} />
+      <Grid container className={classes.header} justify="center" alignItems="center">
+        <Grid item sm={2} xs={5}>
+          <img src={Logo} />
+        </Grid>
+        <Grid item sm={1} xs={1} className={classes.divider} />
+        <Grid item sm={5} xs={6}>
+          <Typography variant="h4" color="secondary">
+            <strong>Welcome</strong>
+              &nbsp;to National Health Authority - Health Information Provider Application
+          </Typography>
+        </Grid>
+      </Grid>
       <Container component="main" maxWidth="xs" className={classes.paper}>
         <form className={classes.form} noValidate>
           <TextField
