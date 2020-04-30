@@ -6,8 +6,12 @@ import { Link as RouterLink } from 'react-router-dom';
 import Link from '@material-ui/core/Link';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
-import { Box } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Divider from '@material-ui/core/Divider';
+import Hidden from '@material-ui/core/Hidden';
 import useStyles from './Login.style';
+import Logo from '../../assets/images/logo.svg';
 
 const Login = () => {
   const classes = useStyles();
@@ -21,7 +25,20 @@ const Login = () => {
 
   return (
     <>
-      <Box className={classes.header} />
+      <Grid container className={classes.header} justify="center" alignItems="center">
+        <Grid item>
+          <img src={Logo} />
+        </Grid>
+        <Hidden only="xs">
+          <Divider orientation="vertical" className={classes.divider} flexItem />
+          <Grid item className={classes.title}>
+            <Typography variant="h4" color="secondary">
+              <strong>Welcome</strong>
+              &nbsp;to National Health Authority - Health Information Provider Application
+            </Typography>
+          </Grid>
+        </Hidden>
+      </Grid>
       <Container component="main" maxWidth="xs" className={classes.paper}>
         <form className={classes.form} noValidate>
           <TextField
