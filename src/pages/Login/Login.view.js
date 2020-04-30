@@ -27,7 +27,7 @@ const Login = () => {
     <>
       <Grid container className={classes.header} justify="center" alignItems="center">
         <Grid item>
-          <img src={Logo} />
+          <img src={Logo} alt="NHA" />
         </Grid>
         <Hidden only="xs">
           <Divider orientation="vertical" className={classes.divider} flexItem />
