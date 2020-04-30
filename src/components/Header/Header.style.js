@@ -1,7 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
-  toolbar: {
+const useStyles = makeStyles((theme) => ({
+  toolBar: {
+    display: 'flex',
     justifyContent: 'space-between',
   },
   logoLink: {

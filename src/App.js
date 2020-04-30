@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Error from './pages/Error';
+import AdminSettings from './pages/AdminSettings';
 import StateProvider, { initialState, reducer } from './store';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -37,6 +38,7 @@ function App() {
         <Router>
           <Switch>
             <PrivateRoute path="/" exact component={Home} />
+            <PrivateRoute path="/admin-settings" component={AdminSettings} />
             <Route path="/login" component={Login} />
             <Route path="*" component={Error} />
           </Switch>
