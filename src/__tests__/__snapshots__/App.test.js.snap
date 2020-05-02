@@ -16,7 +16,12 @@ exports[`App HTML Structure should render properly 1`] = `
           class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-9 MuiTypography-body1 MuiTypography-colorPrimary"
           href="/"
         >
-          Assistant Portal
+          <img
+            alt="Assistant Portal"
+            height="32"
+            src="logo.svg"
+            title="Assistant Portal"
+          />
         </a>
       </div>
     </header>
