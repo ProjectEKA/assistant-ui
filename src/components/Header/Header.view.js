@@ -19,7 +19,7 @@ const Header = ({ name, isAuthenticated }) => {
         </Link>
         <Link
           href="/#/admin-settings"
-          color='inherit'
+          color="inherit"
         >
           <SettingsIcon />
         </Link>
